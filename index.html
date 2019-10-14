@@ -275,7 +275,7 @@
           document.getElementById("td_"+index+"_value_3_tabel_X").innerText =(Number(document.getElementById("td_"+index+"_value_1_tabel_B").innerText)) ;
           // زمان شروع خدمت
           // (td_"+index+"_value_6_tabel_X) - (td_"+index+"_value_7_tabel_X)
-          document.getElementById("td_"+index+"_value_4_tabel_X").innerText =Number(document.getElementById("td_"+index+"_value_6_tabel_X").innerText) - Number(document.getElementById("td_"+index+"_value_7_tabel_X").innerText); ;
+          document.getElementById("td_"+index+"_value_4_tabel_X").innerText =Number(document.getElementById("td_"+index+"_value_2_tabel_X").innerText) + Number(document.getElementById("td_"+index+"_value_7_tabel_X").innerText) + Number(document.getElementById("td_"+index+"_value_8_tabel_X").innerText); 
           // مدت ماندن در صف
           // (td_"+index+"_value_4_tabel_X) - (td_"+index+"_value_2_tabel_X)
           document.getElementById("td_"+index+"_value_5_tabel_X").innerText = Number(document.getElementById("td_"+index+"_value_4_tabel_X").innerText) - Number(document.getElementById("td_"+index+"_value_2_tabel_X").innerText); ;
@@ -294,4 +294,7 @@
 </body>
 </html>
 
+{% comment %}  
 
+value 2 + value 7 + value 8
+ {% endcomment %}
